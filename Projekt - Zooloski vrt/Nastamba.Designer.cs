@@ -74,6 +74,7 @@
             this.edit3.TabIndex = 3;
             this.edit3.Text = "Uredi";
             this.edit3.UseVisualStyleBackColor = true;
+            this.edit3.Click += new System.EventHandler(this.edit3_Click);
             // 
             // exit
             // 
