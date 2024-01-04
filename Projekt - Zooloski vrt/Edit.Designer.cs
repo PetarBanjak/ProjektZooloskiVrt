@@ -31,11 +31,12 @@
             this.components = new System.ComponentModel.Container();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.add4 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.edit3 = new System.Windows.Forms.Button();
+            this.add4 = new System.Windows.Forms.Button();
+            this.delete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,15 +50,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(130, 20);
             this.textBox1.TabIndex = 0;
-            // 
-            // add4
-            // 
-            this.add4.Location = new System.Drawing.Point(319, 121);
-            this.add4.Name = "add4";
-            this.add4.Size = new System.Drawing.Size(75, 38);
-            this.add4.TabIndex = 1;
-            this.add4.Text = "Dodaj";
-            this.add4.UseVisualStyleBackColor = true;
             // 
             // textBox2
             // 
@@ -82,18 +74,37 @@
             // 
             // edit3
             // 
-            this.edit3.Location = new System.Drawing.Point(319, 202);
+            this.edit3.Location = new System.Drawing.Point(319, 163);
             this.edit3.Name = "edit3";
             this.edit3.Size = new System.Drawing.Size(75, 33);
             this.edit3.TabIndex = 5;
             this.edit3.Text = "Uredi";
             this.edit3.UseVisualStyleBackColor = true;
             // 
+            // add4
+            // 
+            this.add4.Location = new System.Drawing.Point(319, 70);
+            this.add4.Name = "add4";
+            this.add4.Size = new System.Drawing.Size(75, 38);
+            this.add4.TabIndex = 1;
+            this.add4.Text = "Dodaj";
+            this.add4.UseVisualStyleBackColor = true;
+            // 
+            // delete
+            // 
+            this.delete.Location = new System.Drawing.Point(319, 250);
+            this.delete.Name = "delete";
+            this.delete.Size = new System.Drawing.Size(75, 43);
+            this.delete.TabIndex = 6;
+            this.delete.Text = "Obriši";
+            this.delete.UseVisualStyleBackColor = true;
+            // 
             // Edit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.delete);
             this.Controls.Add(this.edit3);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -111,11 +122,12 @@
         #endregion
 
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.Button edit3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button add4;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button delete;
+        private System.Windows.Forms.Button edit3;
+        private System.Windows.Forms.Button add4;
     }
 }

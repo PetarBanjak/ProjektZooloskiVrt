@@ -30,9 +30,9 @@
         {
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.obrisi = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // listBox2
@@ -51,41 +51,38 @@
             this.listBox1.Size = new System.Drawing.Size(197, 147);
             this.listBox1.TabIndex = 8;
             // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(355, 131);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(89, 23);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "DP";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(355, 204);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "CB";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // obrisi
             // 
-            this.obrisi.Location = new System.Drawing.Point(355, 282);
+            this.obrisi.Location = new System.Drawing.Point(355, 316);
             this.obrisi.Name = "obrisi";
             this.obrisi.Size = new System.Drawing.Size(89, 23);
             this.obrisi.TabIndex = 11;
             this.obrisi.Text = "Obriši";
             this.obrisi.UseVisualStyleBackColor = true;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(355, 73);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 12;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(355, 190);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 13;
+            // 
             // Zaposlenici_i_zivotinje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.obrisi);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.listBox2);
             this.Name = "Zaposlenici_i_zivotinje";
@@ -98,8 +95,8 @@
 
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button obrisi;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
