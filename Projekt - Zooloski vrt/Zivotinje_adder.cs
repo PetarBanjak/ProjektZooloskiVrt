@@ -1,5 +1,4 @@
-﻿using Projekt___Zooloski_vrt.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,16 +10,13 @@ using System.Windows.Forms;
 
 namespace Projekt___Zooloski_vrt
 {
-    public partial class Zivotinje : Form
+    public partial class Zivotinje_adder : Form
     {
-        public Zivotinje()
+        public Zivotinje_adder()
         {
             InitializeComponent();
         }
 
-        private void add3_Click(object sender, EventArgs e)
-        {
-            new Zivotinje_adder().Show();
-        }
+   
     }
-    }
+}

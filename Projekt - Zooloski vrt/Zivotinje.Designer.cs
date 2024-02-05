@@ -42,7 +42,6 @@
             this.edit2.TabIndex = 13;
             this.edit2.Text = "Uredi";
             this.edit2.UseVisualStyleBackColor = true;
-            this.edit2.Click += new System.EventHandler(this.edit2_Click);
             // 
             // delete2
             // 

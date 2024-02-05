@@ -47,7 +47,7 @@ namespace Projekt___Zooloski_vrt
 
         private void edit3_Click(object sender, EventArgs e)
         {
-            new Zaposlenici_i_zivotinje().Show();
+            new Nastamba_adder().Show();
         }
     }
 }

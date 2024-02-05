@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Edit.cs">
+    <Compile Include="Nastamba_adder.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Edit.Designer.cs">
-      <DependentUpon>Edit.cs</DependentUpon>
+    <Compile Include="Nastamba_adder.Designer.cs">
+      <DependentUpon>Nastamba_adder.cs</DependentUpon>
     </Compile>
     <Compile Include="Nastamba.cs">
       <SubType>Form</SubType>
@@ -69,6 +69,12 @@
     <Compile Include="Zaposlenici.Designer.cs">
       <DependentUpon>Zaposlenici.cs</DependentUpon>
     </Compile>
+    <Compile Include="Zaposlenici_adder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zaposlenici_adder.Designer.cs">
+      <DependentUpon>Zaposlenici_adder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Zaposlenici_i_zivotinje.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,8 +87,14 @@
     <Compile Include="Zivotinje.Designer.cs">
       <DependentUpon>Zivotinje.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Edit.resx">
-      <DependentUpon>Edit.cs</DependentUpon>
+    <Compile Include="Zivotinje_adder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zivotinje_adder.Designer.cs">
+      <DependentUpon>Zivotinje_adder.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Nastamba_adder.resx">
+      <DependentUpon>Nastamba_adder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Nastamba.resx">
       <DependentUpon>Nastamba.cs</DependentUpon>
@@ -99,11 +111,17 @@
     <EmbeddedResource Include="Zaposlenici.resx">
       <DependentUpon>Zaposlenici.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Zaposlenici_adder.resx">
+      <DependentUpon>Zaposlenici_adder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Zaposlenici_i_zivotinje.resx">
       <DependentUpon>Zaposlenici_i_zivotinje.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Zivotinje.resx">
       <DependentUpon>Zivotinje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zivotinje_adder.resx">
+      <DependentUpon>Zivotinje_adder.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

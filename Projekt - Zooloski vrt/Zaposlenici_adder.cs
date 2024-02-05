@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Projekt___Zooloski_vrt
 {
-    public partial class Edit : Form
+    public partial class Zaposlenici_adder : Form
     {
-        public Edit()
+        public Zaposlenici_adder()
         {
             InitializeComponent();
         }

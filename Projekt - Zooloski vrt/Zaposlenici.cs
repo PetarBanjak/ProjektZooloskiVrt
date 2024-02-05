@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projekt___Zooloski_vrt.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,17 +18,9 @@ namespace Projekt___Zooloski_vrt
             InitializeComponent();
         }
 
-
         private void add_Click(object sender, EventArgs e)
         {
-            new Edit().Show();
-        }
-
-        private void edit_Click(object sender, EventArgs e)
-        {
-
-            new Edit().Show();
-
+            new Zaposlenici_adder().Show();
         }
     }
 }

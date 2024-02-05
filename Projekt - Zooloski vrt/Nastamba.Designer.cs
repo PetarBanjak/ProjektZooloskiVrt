@@ -72,7 +72,7 @@
             this.edit3.Name = "edit3";
             this.edit3.Size = new System.Drawing.Size(127, 23);
             this.edit3.TabIndex = 3;
-            this.edit3.Text = "Uredi";
+            this.edit3.Text = "Dodaj";
             this.edit3.UseVisualStyleBackColor = true;
             this.edit3.Click += new System.EventHandler(this.edit3_Click);
             // 

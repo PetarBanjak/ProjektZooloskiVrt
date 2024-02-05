@@ -69,7 +69,6 @@
             this.edit.TabIndex = 9;
             this.edit.Text = "Uredi";
             this.edit.UseVisualStyleBackColor = true;
-            this.edit.Click += new System.EventHandler(this.edit_Click);
             // 
             // Zaposlenici
             // 
