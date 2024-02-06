@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projekt___Zooloski_vrt.Model
 {
-    internal class Zaposlenici: IComparable
+    internal class Zaposlenici : IComparable
     {
 
         private string ime;
@@ -35,5 +35,7 @@ namespace Projekt___Zooloski_vrt.Model
 
         public override string ToString() => this.Prezime + ", " + this.Ime;
 
+
     }
+
 }

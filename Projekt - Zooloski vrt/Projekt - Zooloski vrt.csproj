@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\PodatkovniKontekst.cs" />
     <Compile Include="Nastamba_adder.cs">
       <SubType>Form</SubType>
     </Compile>
