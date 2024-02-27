@@ -22,5 +22,18 @@ namespace Projekt___Zooloski_vrt
         {
             new Zaposlenici_adder().Show();
         }
+
+        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            podatkovniKontekst podatkovniKontekst = new podatkovniKontekst();
+
+            List<Model.Zaposlenici> zaposleni = podatkovniKontekst.UcitajZaposlenike();
+
+            foreach (Model.Zaposlenici zap in zaposleni)
+            {
+                listBox2.Items.Add(zap);
+
+            }
+        }
     }
 }

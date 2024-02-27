@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace Projekt___Zooloski_vrt.Model
 {
-    internal class PodatkovniKontekst
+    internal class podatkovniKontekst
     {
         private List<Zaposlenici> _zaposlenici;
         public List<Zaposlenici> zaposlenici { get { return this._zaposlenici;} }
 
-        public PodatkovniKontekst()
+        public podatkovniKontekst()
         {
 
             this._zaposlenici = UcitajZaposlenike();
@@ -22,7 +22,7 @@ namespace Projekt___Zooloski_vrt.Model
         private string datZaposlenici = "zaposlenici.dat";
 
 
-        private List<Zaposlenici> UcitajZaposlenike()
+        public List<Zaposlenici> UcitajZaposlenike()
         {
             List<Zaposlenici> zaposlenici = new List<Zaposlenici>();
 
