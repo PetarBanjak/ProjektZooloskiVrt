@@ -1,0 +1,16 @@
+C:\Users\Ucenik\Downloads\ProjektZooloskiVrt-master (2)\ProjektZooloskiVrt-master\Projekt - Zooloski vrt\bin\Debug\Projekt - Zooloski vrt.exe.config
+C:\Users\Ucenik\Downloads\ProjektZooloskiVrt-master (2)\ProjektZooloskiVrt-master\Projekt - Zooloski vrt\bin\Debug\Projekt - Zooloski vrt.exe
+C:\Users\Ucenik\Downloads\ProjektZooloskiVrt-master (2)\ProjektZooloskiVrt-master\Projekt - Zooloski vrt\bin\Debug\Projekt - Zooloski vrt.pdb
+C:\Users\Ucenik\Downloads\ProjektZooloskiVrt-master (2)\ProjektZooloskiVrt-master\Projekt - Zooloski vrt\obj\Debug\Projekt - Zooloski vrt.csproj.AssemblyReference.cache
+C:\Users\Ucenik\Downloads\ProjektZooloskiVrt-master (2)\ProjektZooloskiVrt-master\Projekt - Zooloski vrt\obj\Debug\Projekt___Zooloski_vrt.Nastamba_adder.resources
+C:\Users\Ucenik\Downloads\ProjektZooloskiVrt-master (2)\ProjektZooloskiVrt-master\Projekt - Zooloski vrt\obj\Debug\Projekt___Zooloski_vrt.nastamba.resources
+C:\Users\Ucenik\Downloads\ProjektZooloskiVrt-master (2)\ProjektZooloskiVrt-master\Projekt - Zooloski vrt\obj\Debug\Projekt___Zooloski_vrt.Properties.Resources.resources
+C:\Users\Ucenik\Downloads\ProjektZooloskiVrt-master (2)\ProjektZooloskiVrt-master\Projekt - Zooloski vrt\obj\Debug\Projekt___Zooloski_vrt.Zaposlenici.resources
+C:\Users\Ucenik\Downloads\ProjektZooloskiVrt-master (2)\ProjektZooloskiVrt-master\Projekt - Zooloski vrt\obj\Debug\Projekt___Zooloski_vrt.Zaposlenici_adder.resources
+C:\Users\Ucenik\Downloads\ProjektZooloskiVrt-master (2)\ProjektZooloskiVrt-master\Projekt - Zooloski vrt\obj\Debug\Projekt___Zooloski_vrt.Zaposlenici_i_zivotinje.resources
+C:\Users\Ucenik\Downloads\ProjektZooloskiVrt-master (2)\ProjektZooloskiVrt-master\Projekt - Zooloski vrt\obj\Debug\Projekt___Zooloski_vrt.Zivotinje.resources
+C:\Users\Ucenik\Downloads\ProjektZooloskiVrt-master (2)\ProjektZooloskiVrt-master\Projekt - Zooloski vrt\obj\Debug\Projekt___Zooloski_vrt.Zivotinje_adder.resources
+C:\Users\Ucenik\Downloads\ProjektZooloskiVrt-master (2)\ProjektZooloskiVrt-master\Projekt - Zooloski vrt\obj\Debug\Projekt - Zooloski vrt.csproj.GenerateResource.cache
+C:\Users\Ucenik\Downloads\ProjektZooloskiVrt-master (2)\ProjektZooloskiVrt-master\Projekt - Zooloski vrt\obj\Debug\Projekt - Zooloski vrt.csproj.CoreCompileInputs.cache
+C:\Users\Ucenik\Downloads\ProjektZooloskiVrt-master (2)\ProjektZooloskiVrt-master\Projekt - Zooloski vrt\obj\Debug\Projekt - Zooloski vrt.exe
+C:\Users\Ucenik\Downloads\ProjektZooloskiVrt-master (2)\ProjektZooloskiVrt-master\Projekt - Zooloski vrt\obj\Debug\Projekt - Zooloski vrt.pdb

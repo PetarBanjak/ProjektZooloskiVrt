@@ -41,82 +41,92 @@
             // 
             // zivotinja_add
             // 
-            this.zivotinja_add.Location = new System.Drawing.Point(459, 172);
+            this.zivotinja_add.Location = new System.Drawing.Point(612, 212);
+            this.zivotinja_add.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.zivotinja_add.Name = "zivotinja_add";
-            this.zivotinja_add.Size = new System.Drawing.Size(94, 50);
+            this.zivotinja_add.Size = new System.Drawing.Size(125, 62);
             this.zivotinja_add.TabIndex = 21;
             this.zivotinja_add.Text = "Dodaj";
             this.zivotinja_add.UseVisualStyleBackColor = true;
+            this.zivotinja_add.Click += new System.EventHandler(this.zivotinja_add_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(99, 319);
+            this.label4.Location = new System.Drawing.Point(132, 393);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 13);
+            this.label4.Size = new System.Drawing.Size(90, 16);
             this.label4.TabIndex = 19;
             this.label4.Text = "Radni položaj";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(99, 225);
+            this.label3.Location = new System.Drawing.Point(132, 277);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
+            this.label3.Size = new System.Drawing.Size(51, 16);
             this.label3.TabIndex = 18;
             this.label3.Text = "Godine";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(99, 139);
+            this.label2.Location = new System.Drawing.Point(132, 171);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.Size = new System.Drawing.Size(56, 16);
             this.label2.TabIndex = 17;
             this.label2.Text = "Prezime";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(99, 49);
+            this.label1.Location = new System.Drawing.Point(132, 60);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(24, 13);
+            this.label1.Size = new System.Drawing.Size(29, 16);
             this.label1.TabIndex = 16;
             this.label1.Text = "Ime";
             // 
             // godine
             // 
-            this.godine.Location = new System.Drawing.Point(230, 225);
+            this.godine.Location = new System.Drawing.Point(307, 277);
+            this.godine.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.godine.Name = "godine";
-            this.godine.Size = new System.Drawing.Size(100, 20);
+            this.godine.Size = new System.Drawing.Size(132, 22);
             this.godine.TabIndex = 15;
             // 
             // radni_polozaj
             // 
-            this.radni_polozaj.Location = new System.Drawing.Point(230, 319);
+            this.radni_polozaj.Location = new System.Drawing.Point(307, 393);
+            this.radni_polozaj.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radni_polozaj.Name = "radni_polozaj";
-            this.radni_polozaj.Size = new System.Drawing.Size(100, 20);
+            this.radni_polozaj.Size = new System.Drawing.Size(132, 22);
             this.radni_polozaj.TabIndex = 14;
             // 
             // prezime
             // 
-            this.prezime.Location = new System.Drawing.Point(230, 139);
+            this.prezime.Location = new System.Drawing.Point(307, 171);
+            this.prezime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.prezime.Name = "prezime";
-            this.prezime.Size = new System.Drawing.Size(100, 20);
+            this.prezime.Size = new System.Drawing.Size(132, 22);
             this.prezime.TabIndex = 12;
             // 
             // ime
             // 
-            this.ime.Location = new System.Drawing.Point(230, 46);
+            this.ime.Location = new System.Drawing.Point(307, 57);
+            this.ime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ime.Name = "ime";
-            this.ime.Size = new System.Drawing.Size(100, 20);
+            this.ime.Size = new System.Drawing.Size(132, 22);
             this.ime.TabIndex = 11;
             // 
             // Zaposlenici_adder
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.zivotinja_add);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -126,6 +136,7 @@
             this.Controls.Add(this.radni_polozaj);
             this.Controls.Add(this.prezime);
             this.Controls.Add(this.ime);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Zaposlenici_adder";
             this.Text = "Zaposlenici_adder";
             this.ResumeLayout(false);

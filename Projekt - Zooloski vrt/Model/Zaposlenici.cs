@@ -14,6 +14,18 @@ namespace Projekt___Zooloski_vrt.Model
         private int godine;
         private string radni_polozaj;
 
+        public Zaposlenici()
+        {
+        }
+
+        public Zaposlenici (string ime, string prezime, int godine, string radni_polozaj)
+        {
+            this.ime = ime;
+            this.prezime = prezime; 
+            this.godine = godine;
+            this.radni_polozaj = radni_polozaj;
+        }
+
         public string Ime { get { return ime; } set { this.ime = value; } }
         public string Prezime { get { return prezime; } set { this.prezime = value; } }
         public int Godine { get { return godine; } set { this.godine = value; } }
@@ -33,7 +45,7 @@ namespace Projekt___Zooloski_vrt.Model
 
         }
 
-        public override string ToString() => this.Prezime + ", " + this.Ime;
+        public override string ToString() => this.Prezime + ", " + this.Ime + ", " + this.Godine.ToString() + ", " + this.Radni_Polozaj;
 
 
     }

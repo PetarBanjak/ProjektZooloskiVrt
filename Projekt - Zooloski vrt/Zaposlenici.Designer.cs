@@ -32,22 +32,27 @@
             this.add = new System.Windows.Forms.Button();
             this.delete = new System.Windows.Forms.Button();
             this.edit = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.filter = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(72, 77);
+            this.listBox2.ItemHeight = 16;
+            this.listBox2.Location = new System.Drawing.Point(96, 95);
+            this.listBox2.Margin = new System.Windows.Forms.Padding(4);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(197, 277);
+            this.listBox2.Size = new System.Drawing.Size(261, 340);
             this.listBox2.TabIndex = 6;
             this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             // 
             // add
             // 
-            this.add.Location = new System.Drawing.Point(355, 121);
+            this.add.Location = new System.Drawing.Point(777, 95);
+            this.add.Margin = new System.Windows.Forms.Padding(4);
             this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(89, 23);
+            this.add.Size = new System.Drawing.Size(119, 70);
             this.add.TabIndex = 7;
             this.add.Text = "Dodaj";
             this.add.UseVisualStyleBackColor = true;
@@ -55,34 +60,63 @@
             // 
             // delete
             // 
-            this.delete.Location = new System.Drawing.Point(355, 264);
+            this.delete.Location = new System.Drawing.Point(777, 286);
+            this.delete.Margin = new System.Windows.Forms.Padding(4);
             this.delete.Name = "delete";
-            this.delete.Size = new System.Drawing.Size(89, 23);
+            this.delete.Size = new System.Drawing.Size(119, 72);
             this.delete.TabIndex = 8;
             this.delete.Text = "Obriši";
             this.delete.UseVisualStyleBackColor = true;
             // 
             // edit
             // 
-            this.edit.Location = new System.Drawing.Point(355, 188);
+            this.edit.Location = new System.Drawing.Point(777, 192);
+            this.edit.Margin = new System.Windows.Forms.Padding(4);
             this.edit.Name = "edit";
-            this.edit.Size = new System.Drawing.Size(89, 23);
+            this.edit.Size = new System.Drawing.Size(119, 72);
             this.edit.TabIndex = 9;
             this.edit.Text = "Uredi";
             this.edit.UseVisualStyleBackColor = true;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(470, 34);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(167, 22);
+            this.textBox1.TabIndex = 10;
+            this.textBox1.Text = "Search";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // filter
+            // 
+            this.filter.FormattingEnabled = true;
+            this.filter.Items.AddRange(new object[] {
+            "Ime",
+            "Prezime",
+            "Godine",
+            "Radni položaj"});
+            this.filter.Location = new System.Drawing.Point(470, 95);
+            this.filter.Name = "filter";
+            this.filter.Size = new System.Drawing.Size(167, 24);
+            this.filter.TabIndex = 11;
+            // 
             // Zaposlenici
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.filter);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.edit);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.add);
             this.Controls.Add(this.listBox2);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Zaposlenici";
             this.Text = "Zaposlenici";
+            this.Load += new System.EventHandler(this.Zaposlenici_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -92,5 +126,7 @@
         private System.Windows.Forms.Button add;
         private System.Windows.Forms.Button delete;
         private System.Windows.Forms.Button edit;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox filter;
     }
 }
