@@ -32,8 +32,9 @@
             this.add = new System.Windows.Forms.Button();
             this.delete = new System.Windows.Forms.Button();
             this.edit = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.searchBox = new System.Windows.Forms.TextBox();
             this.filter = new System.Windows.Forms.ComboBox();
+            this.rasponFiltera = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // listBox2
@@ -78,14 +79,14 @@
             this.edit.Text = "Uredi";
             this.edit.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // searchBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(470, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(167, 22);
-            this.textBox1.TabIndex = 10;
-            this.textBox1.Text = "Search";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.searchBox.Location = new System.Drawing.Point(470, 34);
+            this.searchBox.Name = "searchBox";
+            this.searchBox.Size = new System.Drawing.Size(167, 22);
+            this.searchBox.TabIndex = 10;
+            this.searchBox.Text = "Search";
+            this.searchBox.TextChanged += new System.EventHandler(this.searchBox_TextChanged);
             // 
             // filter
             // 
@@ -99,14 +100,23 @@
             this.filter.Name = "filter";
             this.filter.Size = new System.Drawing.Size(167, 24);
             this.filter.TabIndex = 11;
+            this.filter.SelectedIndexChanged += new System.EventHandler(this.filter_SelectedIndexChanged);
+            // 
+            // rasponFiltera
+            // 
+            this.rasponFiltera.Location = new System.Drawing.Point(470, 202);
+            this.rasponFiltera.Name = "rasponFiltera";
+            this.rasponFiltera.Size = new System.Drawing.Size(167, 22);
+            this.rasponFiltera.TabIndex = 12;
             // 
             // Zaposlenici
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.rasponFiltera);
             this.Controls.Add(this.filter);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.searchBox);
             this.Controls.Add(this.edit);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.add);
@@ -126,7 +136,8 @@
         private System.Windows.Forms.Button add;
         private System.Windows.Forms.Button delete;
         private System.Windows.Forms.Button edit;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox searchBox;
         private System.Windows.Forms.ComboBox filter;
+        private System.Windows.Forms.TextBox rasponFiltera;
     }
 }
