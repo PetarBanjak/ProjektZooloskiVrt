@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -26,12 +27,7 @@ namespace Projekt___Zooloski_vrt
             new Zaposlenici_adder().Show();
         }
 
-        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void Zaposlenici_Load(object sender, EventArgs e)
+        private void addZap()
         {
 
             podatkovniKontekst podatkovniKontekst = new podatkovniKontekst();
@@ -39,15 +35,10 @@ namespace Projekt___Zooloski_vrt
             listBox2.Items.Clear();
             List<Model.Zaposlenici> zaposleni = podatkovniKontekst.UcitajZaposlenike();
 
-            foreach (Model.Zaposlenici zap in zaposleni)
-            {
-                listBox2.Items.Add(zap);
 
-            }
-
-            if(zaposleniciPrikaz.Count > 0)
+            if (zaposleniciPrikaz.Count > 0)
             {
-                foreach(Model.Zaposlenici zap in zaposleniciPrikaz)
+                foreach (Model.Zaposlenici zap in zaposleniciPrikaz)
                 {
                     listBox2.Items.Add(zap);
                 }
@@ -55,17 +46,26 @@ namespace Projekt___Zooloski_vrt
 
             else
             {
-                foreach(Model.Zaposlenici zap in zaposleni)
+                foreach (Model.Zaposlenici zap in zaposleni)
                 {
                     listBox2.Items.Add(zap);
                 }
 
             }
-            
-            
-            
 
+        }
 
+        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+            addZap();
+
+        }
+
+        private void Zaposlenici_Load(object sender, EventArgs e)
+        {
+
+            addZap();
 
         }
 
@@ -77,13 +77,10 @@ namespace Projekt___Zooloski_vrt
 
             List<Model.Zaposlenici> zaposleniciKomplet = podatkovnikontekst.UcitajZaposlenike();
 
-                foreach (Model.Zaposlenici zap in zaposleniciKomplet)
-                    if (zap.Ime.Contains(searchBox.Text.ToLower())) zaposleniciPrikaz.Add(zap);
-                    else if (zap.Prezime.Contains(searchBox.Text.ToLower())) zaposleniciPrikaz.Add(zap);
-                    else if (zap.Radni_Polozaj.Contains(searchBox.Text.ToLower())) zaposleniciPrikaz.Add(zap);
-            
+            foreach (Model.Zaposlenici zap in zaposleniciKomplet)
+                if (zap.Prezime.Contains(searchBox.Text.ToLower())) zaposleniciPrikaz.Add(zap);
 
-
+            addZap();
 
 
 
@@ -94,15 +91,49 @@ namespace Projekt___Zooloski_vrt
         {
 
             zaposleniciPrikaz.Clear();
+            podatkovnikontekst = new podatkovniKontekst();
             List<Model.Zaposlenici> zaposleniciFilter = this.podatkovnikontekst.UcitajZaposlenike();
 
-            rasponFiltera.Visible = true;
+            if (filterBox.SelectedItem.ToString() == "Godine")
+            {
+                zaposleniciFilter.Sort((z1, z2) => z2.Godine.CompareTo(z1.Godine));
+                zaposleniciFilter.Reverse();
+                foreach (Model.Zaposlenici zap in zaposleniciFilter)
+                {
+                    zaposleniciPrikaz.Add(zap);
+                }
+            }
 
-            
+            if (filterBox.SelectedItem.ToString() == "Ime")
+            {
+
+                zaposleniciFilter.Sort((z1, z2) => z2.Ime.CompareTo(z1.Ime));
+                zaposleniciFilter.Reverse();
+                foreach (Model.Zaposlenici zap in zaposleniciFilter)
+                {
+                    zaposleniciPrikaz.Add(zap);
+                }
+            }
+            addZap();
+        }
+
+        private void delete_Click(object sender, EventArgs e)
+        {
+
+            zaposleniciPrikaz.Clear();
+            List<Model.Zaposlenici> obrisiZap = this.podatkovnikontekst.UcitajZaposlenike();
+
+            if (listBox2.SelectedIndex != -1)
+            {
+                
+            }
+
+            else
+            {
+                MessageBox.Show("Nije odabran nijedan element za brisanje!");
+            }
 
 
         }
-
-        
     }
 }

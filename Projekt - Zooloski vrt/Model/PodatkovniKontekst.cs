@@ -20,7 +20,7 @@ namespace Projekt___Zooloski_vrt.Model
 
         }
 
-        private string datZaposlenici = "C:\\Users\\Ucenik\\Downloads\\zaposlenici.dat";
+        private string datZaposlenici = @"C:\\Users\\user2\\Downloads\\ProjektZooloskiVrt-master\\Projekt - Zooloski vrt\\zaposlenici.dat";
 
 
         public List<Zaposlenici> UcitajZaposlenike()
