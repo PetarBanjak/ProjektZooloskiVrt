@@ -17,6 +17,7 @@ namespace Projekt___Zooloski_vrt
 
         List<Model.Zaposlenici> zaposleniciPrikaz = new List<Model.Zaposlenici>();
         podatkovniKontekst podatkovnikontekst;
+        bool searched=false;
         public Zaposlenici()
         {
             InitializeComponent();
@@ -36,7 +37,7 @@ namespace Projekt___Zooloski_vrt
             List<Model.Zaposlenici> zaposleni = podatkovniKontekst.UcitajZaposlenike();
 
 
-            if (zaposleniciPrikaz.Count > 0)
+            if (zaposleniciPrikaz.Count > 0 || searched)
             {
                 foreach (Model.Zaposlenici zap in zaposleniciPrikaz)
                 {
@@ -58,7 +59,7 @@ namespace Projekt___Zooloski_vrt
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
            
-            addZap();
+           // addZap();
 
         }
 
@@ -71,6 +72,7 @@ namespace Projekt___Zooloski_vrt
 
         private void searchBox_TextChanged(object sender, EventArgs e)
         {
+            searched = true;
             zaposleniciPrikaz.Clear();
 
             podatkovnikontekst = new podatkovniKontekst();
@@ -97,7 +99,7 @@ namespace Projekt___Zooloski_vrt
             if (filterBox.SelectedItem.ToString() == "Godine")
             {
                 zaposleniciFilter.Sort((z1, z2) => z2.Godine.CompareTo(z1.Godine));
-                zaposleniciFilter.Reverse();
+                
                 foreach (Model.Zaposlenici zap in zaposleniciFilter)
                 {
                     zaposleniciPrikaz.Add(zap);
@@ -119,21 +121,20 @@ namespace Projekt___Zooloski_vrt
 
         private void delete_Click(object sender, EventArgs e)
         {
+            podatkovniKontekst podatkovni = new podatkovniKontekst();
 
-            zaposleniciPrikaz.Clear();
-            List<Model.Zaposlenici> obrisiZap = this.podatkovnikontekst.UcitajZaposlenike();
+            if (listBox2.SelectedIndex == -1) return;
+            else {
 
-            if (listBox2.SelectedIndex != -1)
-            {
-                
-            }
+                Model.Zaposlenici zap = listBox2.SelectedItem as Model.Zaposlenici;
 
-            else
-            {
-                MessageBox.Show("Nije odabran nijedan element za brisanje!");
-            }
+                podatkovni.ObrisiZaposlenika(zap);
 
-
+                    }
+            zaposleniciPrikaz = podatkovni.UcitajZaposlenike();
+            addZap();
         }
+
+      
     }
 }

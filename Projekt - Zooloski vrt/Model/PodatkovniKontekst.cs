@@ -20,7 +20,7 @@ namespace Projekt___Zooloski_vrt.Model
 
         }
 
-        private string datZaposlenici = @"C:\\Users\\user2\\Downloads\\ProjektZooloskiVrt-master\\Projekt - Zooloski vrt\\zaposlenici.dat";
+        private string datZaposlenici = @"C:\Users\Ucenik\Downloads\ProjektZooloskiVrt-master\Projekt - Zooloski vrt\zaposlenici.dat";
 
 
         public List<Zaposlenici> UcitajZaposlenike()
@@ -66,6 +66,24 @@ namespace Projekt___Zooloski_vrt.Model
             }
             
         }
+
+        public void ObrisiZaposlenika(Zaposlenici zap)
+        {
+           
+
+            using (StreamWriter sw = new StreamWriter(datZaposlenici))
+            {
+                foreach (Zaposlenici z in this.zaposlenici)
+                {
+                    if (z.Ime.Equals(zap.Ime)&& z.Prezime.Equals(zap.Prezime) && z.Godine.Equals(zap.Godine) && z.Radni_Polozaj.Equals(zap.Radni_Polozaj)) continue;
+                    else sw.WriteLine($"{z.Ime}|{z.Prezime}|{z.Godine}|{z.Radni_Polozaj}");
+                }
+
+                sw.Close();
+            }
+
+        }
+
 
     }
 }
